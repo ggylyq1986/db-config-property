@@ -55,7 +55,7 @@ class ConfigProperty {
 	}
 	
 	def updateConfigMap() {
-		Boolean useQuotes = true//!(((value ==~ /\[.*]/)) || DefaultGroovyMethods.isNumber(value) || DefaultGroovyMethods.isFloat(value) || value in ['true', 'false'])
+		Boolean useQuotes = !(((value ==~ /\[.*]/)) || DefaultGroovyMethods.isNumber(value) || DefaultGroovyMethods.isFloat(value) || value in ['true', 'false'])
 		String objectString = useQuotes ? "${key}='''${value}'''" : "${key}=${value}"
         ConfigObject configObject = new ConfigSlurper().parse(objectString)
         CH.config.merge(configObject)
