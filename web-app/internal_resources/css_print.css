@@ -1,0 +1,57 @@
+/* CSS Document */
+
+* {	font-family:Arial, Helvetica, sans-serif; }
+* a, * a:link, * a:active, * a:visited { text-decoration:none; }
+* a:hover { text-decoration:underline; }
+
+body, div { font-size:12px; margin:0; padding:0; }
+
+/*   HEADER   */
+#uowlogo { text-align:right; }
+#top-links, #megamenu, .submenu { display:none; clear:both; }
+
+/*   BREADCRUMB   */
+#breadcrumb { display:none; clear:both; }
+
+/*	WRAP	*/
+#wrap { background:#fff; }
+body.uow { background:#fff; }
+
+/*   CONTENT   */
+#page-title { font-size:2.5em; font-weight:bold; }
+#subsite-banner { display:none; }
+#content-bg { background:#fff; clear:both; }
+.container_24, .grid_24, .container_24 .grid_24 { width:100%; }
+
+/*   NAV - left & right  */
+#column-right, #column-left { display:none; }
+
+/*   SUBSITE   */
+div#subsite-banner-box { height:85px; overflow:auto; }
+
+table#subsite-banner { border:1px solid #ddd; border-collapse:collapse; }
+table#subsite-banner #row1 { display:none; }
+table#subsite-banner #row2 { height:35px; padding:0 10px 0; border:none; }
+table#subsite-banner #row3 { height:50px; padding:0 10px 0; border:none; }
+table#subsite-banner td span p { display:none; }
+table#subsite-banner td h2 { font-weight:bold; color:#000; margin:0; padding:7px 0; }
+table#subsite-banner td p { color:#000; margin:0; padding:3px 0; line-height:1.3em; font-size:0.95em; }
+
+/*   column-main   */
+#column-main { width:100%; }
+
+#column-main table { border:1px solid #ddd; border-collapse:collapse; background:#f7f7f7; }
+#column-main table th { font-weight:bold; border-top:1px solid #ddd; border-right:1px solid #ddd; }
+#column-main table th, #column-main table td { padding:3px; text-align:left; }
+
+table#subsite-banner { border:1px solid #ddd; border-collapse:collapse; }
+table#subsite-banner td span p { display:none; }
+table#subsite-banner td h2 { font-weight:bold; color:#000; margin:0; padding:7px 0; }
+table#subsite-banner td p { color:#000; margin:0; padding:3px 0; line-height:1.3em; font-size:0.95em; }
+
+#lastupdated { float:right; font-size:0.833em; color:#000; }
+
+.img-border { border:1px solid #ddd; }
+
+/*  FOOTER SETUP   */
+#footer { display:none; }

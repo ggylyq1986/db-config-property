@@ -1,0 +1,24 @@
+<plugin name='db-config-property' version='1.1.0' grailsVersion='2.1 &gt; *'>
+  <author>Peter, Guanyu</author>
+  <title>Db Config Property Plugin - Special Team UOW's ITS</title>
+  <description>Brief summary/description of the plugin.
+</description>
+  <documentation>http://grails.org/plugin/db-config-property</documentation>
+  <type>DbConfigPropertyGrailsPlugin</type>
+  <resources>
+    <resource>DynamicConfigBootStrap</resource>
+    <resource>au.edu.uow.groovy.grails.plugins.cp.ConfigPropertyController</resource>
+    <resource>au.edu.uow.groovy.grails.plugins.cp.ConfigProperty</resource>
+    <resource>au.edu.uow.groovy.grails.plugins.cp.ConfigPropertyService</resource>
+    <resource>au.edu.uow.groovy.grails.plugins.cp.CustomTagLib</resource>
+  </resources>
+  <repositories>
+    <repository name='grailsCentral' url='http://grails.org/plugins' />
+    <repository name='http://repo.grails.org/grails/core' url='http://repo.grails.org/grails/core/' />
+    <repository name='mavenCentral' url='http://repo1.maven.org/maven2/' />
+  </repositories>
+  <dependencies />
+  <plugins />
+  <runtimePluginRequirements />
+  <behavior />
+</plugin>
