@@ -15,6 +15,7 @@ environments {
         dataSource {
             dbCreate = "create-drop" // one of 'create', 'create-drop', 'update', 'validate', ''
             url = "jdbc:h2:mem:devDb;MVCC=TRUE;LOCK_TIMEOUT=10000"
+			//create table config_property (id number(19,0) not null, version number(19,0) not null, description varchar2(100 char), key varchar2(100 char) not null, value varchar2(255 char) not null, primary key (id));
         }
     }
     test {
