@@ -3,7 +3,7 @@
 <!doctype html>
 <html>
 	<head>
-		<meta name="layout" content="DBConfigPropertyUI.gsp">
+		<meta name="layout" content="dbConfigPropertyUI.gsp">
 		<g:set var="entityName" value="${message(code: 'configProperty.label', default: 'ConfigProperty')}" />
 		<title><g:message code="default.show.label" args="[entityName]" /></title>
 	</head>
