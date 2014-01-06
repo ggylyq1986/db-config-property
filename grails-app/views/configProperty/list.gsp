@@ -23,7 +23,7 @@
 						
 						<g:sortableColumn property="description" title="${message(code: 'configProperty.description.label', default: 'Description')}" />
 						
-						<th class="sortable">Is In Config File</th>
+						<th class="sortable"><a href="#">Is In Config File</a></th>
 						
 					</tr>
 				</thead>
