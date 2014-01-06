@@ -32,7 +32,7 @@ class ConfigPropertyController {
             return
         }
 		
-		properties = ConfigurationHolder.flatConfig
+		def properties = ConfigurationHolder.flatConfig
 		session.setAttribute("DBCfgProperties", properties)
 
         flash.message = message(code: 'default.created.message', args: [message(code: 'configProperty.label', default: 'ConfigProperty'), configPropertyInstance.id])
