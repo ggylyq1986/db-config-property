@@ -1,6 +1,6 @@
-package au.edu.uow.groovy.grails.plugins.cp
+package com.dbconfig
 
-import org.codehaus.groovy.grails.commons.ConfigurationHolder as CH
+import org.codehaus.groovy.grails.commons.GrailsApplication as CH
 import org.codehaus.groovy.runtime.DefaultGroovyMethods
 
 class ConfigProperty {

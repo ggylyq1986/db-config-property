@@ -7,9 +7,9 @@
   <type>DbConfigPropertyGrailsPlugin</type>
   <resources>
     <resource>DynamicConfigBootStrap</resource>
-    <resource>au.edu.uow.groovy.grails.plugins.cp.ConfigPropertyController</resource>
-    <resource>au.edu.uow.groovy.grails.plugins.cp.ConfigProperty</resource>
-    <resource>au.edu.uow.groovy.grails.plugins.cp.ConfigPropertyService</resource>
+    <resource>com.dbconfig.ConfigPropertyController</resource>
+    <resource>com.dbconfig.ConfigProperty</resource>
+    <resource>com.dbconfig.ConfigPropertyService</resource>
     <resource>au.edu.uow.groovy.grails.plugins.cp.CustomTagLib</resource>
   </resources>
   <repositories>

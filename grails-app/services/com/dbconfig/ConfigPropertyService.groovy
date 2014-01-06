@@ -1,4 +1,6 @@
-package au.edu.uow.groovy.grails.plugins.cp
+package com.dbconfig
+
+import com.dbconfig.ConfigProperty;
 
 class ConfigPropertyService {
 

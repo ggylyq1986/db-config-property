@@ -1,4 +1,4 @@
-<%@ page import="au.edu.uow.groovy.grails.plugins.cp.ConfigProperty" %>
+<%@ page import="com.dbconfig.ConfigProperty" %>
 <!doctype html>
 <html>
 	<head>

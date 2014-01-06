@@ -1,6 +1,7 @@
-import au.edu.uow.groovy.grails.plugins.cp.ConfigProperty
-import au.edu.uow.groovy.grails.plugins.cp.ConfigPropertyService
-import org.codehaus.groovy.grails.commons.ConfigurationHolder
+import org.codehaus.groovy.grails.commons.GrailsApplication
+
+import com.dbconfig.ConfigProperty;
+import com.dbconfig.ConfigPropertyService;
 
 class DynamicConfigBootStrap {
 
@@ -12,7 +13,7 @@ class DynamicConfigBootStrap {
 		def isLoadConfig = (config == null || config instanceof java.util.Map)? false : config
 		
 		if(isLoadConfig){
-			ConfigurationHolder.flatConfig.each {key, value ->
+			grailsApplication.flatConfig.each {key, value ->
 				configPropertyService.loadValues(key, value)
 			}
 		}

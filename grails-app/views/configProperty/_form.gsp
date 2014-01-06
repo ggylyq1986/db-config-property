@@ -1,4 +1,4 @@
-<%@ page import="au.edu.uow.groovy.grails.plugins.cp.ConfigProperty" %>
+<%@ page import="com.dbconfig.ConfigProperty" %>
 
 
 <fieldset class="fieldcontain ${hasErrors(bean: configPropertyInstance, field: 'key', 'formError')} ">

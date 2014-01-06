@@ -1,9 +1,14 @@
-package au.edu.uow.groovy.grails.plugins.cp
+package com.dbconfig
 
 import org.springframework.dao.DataIntegrityViolationException
-import org.codehaus.groovy.grails.commons.ConfigurationHolder
+import org.codehaus.groovy.grails.commons.GrailsApplication
+
+import com.dbconfig.ConfigProperty;
+
 
 class ConfigPropertyController {
+	
+	GrailsApplication grailsApplication
 
     static allowedMethods = [save: "POST", update: "POST", delete: "POST"]
 
@@ -15,10 +20,10 @@ class ConfigPropertyController {
         params.max = Math.min(max ?: 10, 100)
 		def properties = session["DBCfgProperties"]
 		if(!properties){
-			properties = ConfigurationHolder.flatConfig
+			properties = grailsApplication.flatConfig
 			session.setAttribute("DBCfgProperties", properties)
 		}
-        [configPropertyInstanceList: ConfigProperty.list(params), configPropertyInstanceTotal: ConfigProperty.count(), properties : ConfigurationHolder.flatConfig]
+        [configPropertyInstanceList: ConfigProperty.list(params), configPropertyInstanceTotal: ConfigProperty.count(), properties : grailsApplication.flatConfig]
     }
 
     def create() {
@@ -32,7 +37,7 @@ class ConfigPropertyController {
             return
         }
 		
-		def properties = ConfigurationHolder.flatConfig
+		def properties = grailsApplication.flatConfig
 		session.setAttribute("DBCfgProperties", properties)
 
         flash.message = message(code: 'default.created.message', args: [message(code: 'configProperty.label', default: 'ConfigProperty'), configPropertyInstance.id])
